@@ -1,0 +1,85 @@
+
+
+body {
+    padding: 0rem;
+    margin: 0;
+    border-style: border-box;
+  }
+
+  .starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  /*corpo della card*/
+  .card-body{
+    height: 200px;
+
+  }
+
+  /* parte fondamentale per fare in modo che la dimensione delle cards
+  non sia influenzata dalla quantità di testo */
+  .text-container {
+    flex-grow: 1;
+    overflow: hidden; /* nasconde il testo in eccesso */
+    max-height: 70px; /* altezza massima per l'area di testo */
+  }
+
+  .product-img {
+    /*objetct-fit: cover; */ /* per "effetto zoom" */
+    padding-top:0;
+    object-fit: contain;
+    width: 100%;  /*l'immagine si adatta alla larghezza del contenitore */
+    height: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* animazione ingrandimento e ombra */
+  }
+  
+  /*effetto al passaggio del mouse */
+  .product-img:hover {
+    transform: scale(1.05); /*ingrandisce l'immagine del 5%*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /*aggiunge ombra sfumata*/
+  }
+
+  a.product-brand {
+    font-size: 1.2rem ;
+    font-weight: bold;
+}
+
+a.product-name{
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+  .product-brand,
+.product-name {
+    overflow: hidden;
+    text-overflow: ellipsis; /* mostra i puntini di sospensione se il testo eccede */
+}
+
+  
+.product-brand:hover,
+.product-name:hover {
+    text-decoration: underline !important; 
+}
+
+.btn-details:hover {
+  color:blue;
+  background-color: lightskyblue;
+  border: 2px solid blue;
+  font-size:large;
+
+}
+
+.btn-add-cart:hover{
+  color: darkslategray;
+  background-color: lightgray;
+  border: 2px solid rgb(14, 23, 23);
+  font-size:large;
+
+}
+
+
+
+.product-price, .btn {
+  margin-top: auto; /*spinge i pulsanti verso il basso */
+}

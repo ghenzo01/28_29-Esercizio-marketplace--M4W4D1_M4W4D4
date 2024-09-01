@@ -1,0 +1,45 @@
+
+
+body {
+    padding: 0rem;
+    margin: 0;
+    border-style: border-box;
+  }
+
+  .product-img {
+    /*objetct-fit: cover; */ /* per "effetto zoom" */
+    padding-top:0;
+    object-fit: contain;
+    width: 100%;  /*l'immagine si adatta alla larghezza del contenitore */
+    height: 350px;
+  
+  }
+
+  a.product-brand {
+    font-size: 2rem ;
+    font-weight: bold;
+}
+
+a.product-name{
+  font-size: 3rem;
+  margin-right: 1rem
+}
+
+.product-quantity{
+
+    font-size: 2rem;
+    
+}
+
+.product-price{
+    color:green;
+    font-size:3rem;
+}
+
+/* parte fondamentale per fare in modo che la dimensione delle cards
+non sia influenzata dalla quantità di testo */
+.text-container {
+  flex-grow: 1;
+  overflow: hidden; /* nasconde il testo in eccesso */
+  max-height: 70px; /* altezza massima per l'area di testo */
+}

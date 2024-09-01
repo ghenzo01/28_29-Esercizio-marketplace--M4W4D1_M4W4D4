@@ -1,0 +1,21 @@
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 100; /*z-index alto, best practice per i loader dei siti reali. NB: occhio a che non si sovrapponga alle finestre di warning, errore, ecc..*/
+}
+
+
+.wrap{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: calc(50% - 25px);
+}
+

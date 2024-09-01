@@ -1,0 +1,100 @@
+
+body {
+    padding: 0rem;
+    margin: 0;
+    border-style: border-box;
+  }
+
+  .starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .product-img {
+    object-fit: cover;
+    width: 100%;  /*prende tutta lunghezza contenitore*/
+    height: 250px; /*altezza fissa*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*animazione ingrandimento + ombra */
+  }
+
+  /*pulsante "X" per eliminazione*/
+.btn-close.delete-btn {
+    top: 5px;
+    right: 5px;
+    background-color: rgb(238, 147, 147);
+    color: white;
+    border: 3px solid brown;
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/*ancora pulsante "X", al passaggio del mouse stavolta*/
+.btn-close.delete-btn:hover {
+    background-color: rgb(251, 2, 2);
+}
+
+/*mando giù la card per non sovrapporne il contenuto al pulsante */
+.card {
+    padding-top: 50px;
+    border: 1px solid grey;
+}
+
+
+.btn-edit {
+  background-color:orangered
+
+}
+
+
+.btn-edit:hover {
+  color:rgb(14, 116, 14);
+  background-color: yellow;
+  border: 2px solid rgb(14, 116, 14);
+  font-size:large;
+
+}
+
+#add-btn{
+  background-color:rgb(31, 155, 25);
+  border: 1px solid yellow;
+}
+
+#add-btn:hover{
+  color:purple;
+  background-color: rgb(8, 255, 8);
+  border: 2px solid purple;
+  font-size:x-large;
+
+
+}
+
+
+a.product-brand {
+  font-size: 1.2rem ;
+  font-weight: bold;
+}
+
+a.product-name{
+font-size: 1.8rem;
+text-align: left;
+}
+
+.product-brand,
+.product-name {
+  overflow: hidden;
+  text-overflow: ellipsis; /* mostra i puntini di sospensione se il testo eccede */
+}
+
+/* parte fondamentale per fare in modo che la dimensione delle cards
+non sia influenzata dalla quantità di testo */
+.text-container {
+  flex-grow: 1;
+  overflow: hidden; /* nasconde il testo in eccesso */
+  max-height: 70px; /* altezza massima per l'area di testo */
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
